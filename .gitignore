@@ -1,0 +1,56 @@
+# Secrets and machine-specific settings
+.env*
+!.env.example
+.envrc
+.pypirc
+.mcp.local.json
+*.pem
+*.key
+
+# Python environments, builds and caches
+.venv*/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage*
+coverage.xml
+htmlcov/
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+
+# Local Agent state; only the reviewed sample skill is shared
+.multicc/*
+!.multicc/skills/
+.multicc/skills/*
+!.multicc/skills/code_review/
+.playwright-mcp/
+.transcripts/
+.task_outputs/
+.tasks/
+.teams/
+*.log
+
+# Optional datasets and local investigation artifacts
+data/
+analysis/
+analysis_progress.md
+.local-backups/
+.demo-workspace/
+node_modules/
